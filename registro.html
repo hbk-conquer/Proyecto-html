@@ -22,7 +22,54 @@
     </header>
     
     <main>
-
+        <section>
+            <h1>Registro</h1>
+            <p>Completa el siguiente formulario para registrarte en Conquer Academy y acceder a la información de 
+                nuestros cursos, noticias y recursos de aprendizaje.</p>
+            <p>Los datos solicitados nos permiten crear un perfil básico de usuario dentro de la plataforma.</p>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div>
+                        <label for="name">Nombre completo</label>
+                        <input type="text" name="nombre" id="name" placeholder="Introduce tu nombre y apellidos." size="30" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="birthday">Fecha de nacimiento</label>
+                        <input type="date" name="nacimiento" id="birthday" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="address">Dirección</label>
+                        <input type="text" name="direccion" id="address" placeholder="Benito Juarez 34, CP 35720" size="25" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="url">Página web</label>
+                        <input type="url" name="url" id="url" placeholder="https://example.com">
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="profile">Foto de perfil</label>
+                        <input type="file" name="foto" id="profile" accept="image/*" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="bio">Biografía</label><br>
+                        <textarea name="biografia" id="bio" placeholder="Cuéntanos un poco sobre ti." cols="50" rows="5" required></textarea>
+                    </div>
+                </fieldset>
+                <p>Revisa que los datos introducidos sean correctos antes de enviar el formulario.</p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Restablecer datos</button>
+            </form>
+        </section>
     </main>
 
     <footer>
