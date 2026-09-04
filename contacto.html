@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 </head>
-
 <body>
     <header>
-        <img src="img/common/logotipo-conquer-crypto.png"  width="350" height="60" alt="imagen de logotipo conquer">
-        <ol>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="quienes-somos.html">Quiénes somos</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="registro.html">Registro</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ol>
+        <img src="../img/common/logotipo-conquer-crypto.png"  width="350" height="60" alt="imagen de logotipo conquer">
+        <nav>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="../cursos.html">Cursos</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../registro.html">Registro</a></li>
+                <li><a href="../login.html">Login</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>    
         <hr>
     </header>
-    
     <main>
         <section>
             <h1>Contacto</h1>
@@ -33,11 +33,11 @@
             <h2>Datos de contacto</h2>
                 <p>Estos son los principales canales de comunicación de Conquer Academy.</p>
                 <ul>
-                    <li>Email: <a href="contacto.html">contacto@conqueracademy.com</a></li>
-                    <li>Teléfono: <a href="contacto.html">+34 600 000 000</a></li>
+                    <li>Email: contacto@conqueracademy.com</li>
+                    <li>Teléfono: +34 600 000 000</li>
                     <li>Dirección: Calle Tecnología 25, Madrid, España</li>
                     <li>Horario: Lunes a viernes, de 9:00 a 18:00</li>
-                    <li>Página web: <a href="https://www.conquerblocks.com/contacto" target="_blank">www.conqueracademy.com</a></li>
+                    <li>Página web: <a href="home.html" target="_blank">www.conqueracademy.com</a></li>
                 </ul>
         </section>
         <section>
@@ -58,41 +58,46 @@
                 <form action="#" method="post">
                     <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
                     <fieldset>
-                        <label for="name">Nombre completo</label>
-                        <input type="text" name="nombre" id="name" required><br><br>
-
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required><br><br>
-
-                        <label for="phone">Teléfono</label>
-                        <input type="number" name="telefono" id="phone"><br><br>
-
-                        <label for="subject">Asunto</label>
-                        <input type="text" name="asunto" id="subject" required><br><br>
-
-                        <label for="message">Mensaje</label><br>
-                        <textarea name="mensaje" id="message" cols="50" rows="5" required></textarea><br>
-
-                        <p>Motivo de contacto</p>
-                        <input type="radio" name="motivo" id="cursos">
-                        <label for="cursos">Información sobre cursos</label><br>
-
-                        <input type="radio" name="motivo" id="acceso">
-                        <label for="acceso">Problemas de acceso</label><br> 
-
-                        <input type="radio" name="motivo" id="registro">
-                        <label for="registro">Registro en la plataforma</label><br>
-
-                        <input type="radio" name="motivo" id="otros" checked>
-                        <label for="otros">Otra consulta</label><br><br>
-
-                        <button type="submit">Enviar formulario</button>
-                        <button type="reset">Borrar datos del formulario</button>
+                        <legend>Datos del mensaje</legend><br>
+                        <div>
+                            <label for="name">Nombre completo</label>
+                            <input type="text" name="nombre" id="name" required><br><br>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required><br><br>
+                        </div>
+                        <div>
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" name="telefono" id="phone"><br><br>
+                        </div>
+                        <div>
+                            <label for="subject">Asunto</label>
+                            <input type="text" name="asunto" id="subject" required><br><br>
+                        </div>
+                        <div>
+                            <label for="message">Mensaje</label><br>
+                            <textarea name="mensaje" id="message" cols="50" rows="5" required></textarea><br>
+                        </div>
+                        <div>
+                            <p>Motivo de contacto</p>
+                            <input type="radio" name="motivo" id="cursos" value="cursos">
+                            <label for="cursos">Información sobre cursos</label><br>
+                            <input type="radio" name="motivo" id="acceso" value="acceso">
+                            <label for="acceso">Problemas de acceso</label><br> 
+                            <input type="radio" name="motivo" id="registro" value="registro">
+                            <label for="registro">Registro en la plataforma</label><br>
+                            <input type="radio" name="motivo" id="otros" value="otros" checked>
+                            <label for="otros">Otra consulta</label><br><br>
+                        </div>
+                        <div>
+                            <button type="submit">Enviar formulario</button>
+                            <button type="reset">Borrar datos del formulario</button>
+                        </div>
                     </fieldset>
                 </form>
         </section>
     </main>
-
     <footer>
         <hr>
         <p>Conquer Blocks 2026 ® | Conquer Blocks ® es un trademark de ConquerX</p>
